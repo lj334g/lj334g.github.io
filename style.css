@@ -1,0 +1,170 @@
+/* Alphabetically sorted */
+
+/* Common Styles */
+body {
+    background-color: #EDF1D6;
+    color: #40513B;
+    font-family: 'Kalam', cursive;
+    line-height: 1.6;  
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+}
+
+/* Center alignment styles */
+.center {
+    align-items: center;  
+    display: flex;
+    justify-content: center;  
+    width: 100%;
+}
+
+/* Used for map and other general alignments */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    width: 100%;
+}
+
+/* Caption style */
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Form container style */
+.form_div {
+    align-items: center;
+    background-color: #609966; 
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;         
+}
+
+/* Form style */
+form {
+    border: 2px solid #9DC08B;
+    box-shadow: 0 0 10px rgba(0, 50, 0, 0.4); 
+    max-width: 400px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #40513B;
+    font-family: 'Kalam', cursive;
+    font-weight: bold; 
+    text-align: center;
+}
+
+h3 {
+    color: #9DC08B;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+/* Fixed header style */
+header {
+    background-color: #40513B;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Image style */
+img.responsive {
+    border-radius: 50px;
+    display: block;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+/* List styles */
+li {
+    color: #9DC08B;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* Main content padding */
+main {
+    padding-top: 35px;
+}
+
+/* Navigation/Menu styles */
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    color: #EDF1D6; 
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav li a:hover {
+    color: #9DC08B;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+/* Paragraph style */
+p {
+    color: #40513B;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table, th {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: rgb(96, 153, 102);
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Unordered list style */
+ul {
+    font-family: 'Kalam', cursive;
+    font-size: 15px;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* External notes */
+/* Added font family 'Kalam' from Google fonts */
+/* Color palette inspiration from etsy */

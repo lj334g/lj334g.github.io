@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Custom Font: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet"><meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Most Likely To Visit</title>
+</head>
+
+<body>
+    <main>
+        <!-- This is the menu bar -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="ParkImages.html">National Parks</a></li>
+                    <li><a href="NationalParkSize.html">National Park Size</a></li>
+                    <li><a href="ParkSurvey.html">Park Survey</a></li>
+                    <li><a href="GeoMap.html">Nearest National Parks</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Added custom form -->
+        <h1>Which national park are you most likely to visit?</h1>
+        <div class="form_div">
+            <!-- Does not go to an actual url, just a demo (#) -->
+            <form action="#" method="post">
+                <label>
+                    <input type="radio" name="national_park" value="Yosemite"> Yosemite
+                </label><br>
+
+                <label>
+                    <input type="radio" name="national_park" value="Yellowstone"> Yellowstone
+                </label><br>
+
+                <label>
+                    <input type="radio" name="national_park" value="Grand Canyon"> Grand Canyon
+                </label><br>
+
+                <label>
+                    <input type="radio" name="national_park" value="Zion"> Zion
+                </label><br>
+
+                <label>
+                    <input type="radio" name="national_park" value="other"> Other:
+                </label>
+                <input type="text" name="other_park" placeholder="Type the park name here"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p>James Lee, jamesle2@andrew.cmu.edu</p>
+        </footer>
+    </main>
+</body>
+</html>
