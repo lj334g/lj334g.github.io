@@ -4,6 +4,10 @@ body, html {
     font-family: 'Assistant', sans-serif;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 nav {
     background-color: rgba(0, 128, 0, 0.8);
     padding: 10px 50px;
