@@ -1,57 +1,51 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Custom Font: -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
-    
-    <!-- Meta Tags (keywords are mainly National Park names)-->
-    <meta charset="utf-8">
-    <title>National Parks</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="author" content="James Lee">
-    <meta name="description" content="National Park Info Page">
-    <meta name="keywords" content="National Park, Denali, Acadi, Yellow Stone, Arches, Grand Canyon, Death Valley, Great Smokey, Bryce Canyon, Grand Teton, Yoesemite, Zion, Rocky">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <title>EcoRestore</title>
 </head>
-
-<!-- For this project, I'm putting together a special showcase on National Parks. -->
-<!-- I grew up traveling with my parents and one of my favorite trips was to the Grand Canyon. -->
-<!-- While photos hardly do it justice, I want to share some of my experiences. -->
-<!-- I'll feature images of various national parks, highlight their vastness in
-    acres, provide a brief survey, and point out parks close to Pittsburgh. -->
 <body>
-    <!-- This is the menu bar -->
+    <nav>
+        <div id="logo">EcoRestore</div>
+        <ul>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#results">Results</a></li>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Menu</a></li>
-                <li><a href="page1.html">National Parks</a></li>
-                <li><a href="page2.html">National Park Size</a></li>
-                <li><a href="page3.html">Park Survey</a></li>
-                <li><a href="page4.html">Nearest National Parks</a></li>
-            </ul>
-        </nav>
+        <div class="overlay">
+            <div class="column">
+                <h2>Our Mission</h2>
+                <p>We strive to preserve and bring back the green cover of our planet. By rejuvenating rainforests, we hope to maintain a sustainable environment for generations to come.</p>
+            </div>
+            <div class="column">
+                <h2>About Us</h2>
+                <p>We are a passionate team dedicated to the cause of rainforest conservation. Our collective efforts are aimed at making the world a greener place.</p>
+            </div>
+            <div class="column">
+                <h2>Our Vision</h2>
+                <p>Our vision is a world where forests thrive, ecosystems are balanced, and biodiversity flourishes. We believe that with your support, this vision can become a reality.</p>
+            </div>
+        </div>
     </header>
-
-    <main>
-        <h1>National Parks</h1>
-        <figure>
-            <!-- Image with caption -->
-            <img src="Images/DeathValley.jpg" alt="Death Valley National Park" class="responsive">
-            <figcaption>
-                Death Valley National Park, located in eastern California, is a vast expanse known for its extreme temperatures, diverse landscapes, and being the lowest point in North America!
-            </figcaption>
-        </figure>
-        
-        <!-- Added a slogan -->
-        <h1>National parks protect our environment and history for future generations. We can raise awareness by
-        <br> educating people and promoting responsible visits to these parks.</h1>
-        
-        <!-- Footer for every page -->
-        <footer>
-            <p>James Lee, jamesle2@andrew.cmu.edu</p>
-        </footer>
-    </main>
+    <section class="images">
+        <div class="image-section">
+            <img src="images/before.jpg" alt="Before Image">
+            <p>Just a while back, this place almost became a desert - no trees, barely any wildlife. It's hard to believe, isn't it?</p>
+        </div>
+        <div class="image-section">
+            <img src="images/after.jpg" alt="After Image">
+            <p>Thanks to our united efforts and relentless dedication, look at it now! This area is buzzing with life and cloaked in vibrant greenery.</p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2023 EcoRestore. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

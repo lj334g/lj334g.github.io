@@ -1,170 +1,160 @@
-/* Alphabetically sorted */
-
-/* Common Styles */
-body {
-    background-color: #EDF1D6;
-    color: #40513B;
-    font-family: 'Kalam', cursive;
-    line-height: 1.6;  
+body, html {
     margin: 0;
     padding: 0;
-    padding-top: 60px;
+    font-family: 'Assistant', sans-serif;
 }
 
-/* Center alignment styles */
-.center {
-    align-items: center;  
+nav {
+    background-color: rgba(0, 128, 0, 0.8);
+    padding: 10px 50px;
     display: flex;
-    justify-content: center;  
-    width: 100%;
-}
-
-/* Used for map and other general alignments */
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    justify-content: center; 
-    width: 100%;
-}
-
-/* Caption style */
-figcaption {
-    margin-top: 10px;
-    text-align: center;
-}
-
-/* Form container style */
-.form_div {
+    justify-content: space-between;
     align-items: center;
-    background-color: #609966; 
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px 30px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 40px auto;         
 }
 
-/* Form style */
-form {
-    border: 2px solid #9DC08B;
-    box-shadow: 0 0 10px rgba(0, 50, 0, 0.4); 
-    max-width: 400px;
-    padding: 20px;
-    width: 100%;
-}
-
-/* Heading styles */
-h1, h2 {
-    color: #40513B;
-    font-family: 'Kalam', cursive;
-    font-weight: bold; 
-    text-align: center;
-}
-
-h3 {
-    color: #9DC08B;
-    font-family: 'Kalam', cursive;
-    text-align: center;
-}
-
-/* Fixed header style */
-header {
-    background-color: #40513B;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-/* Image style */
-img.responsive {
-    border-radius: 50px;
-    display: block;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-}
-
-/* List styles */
-li {
-    color: #9DC08B;
-    font-size: x-large;
-    text-align: center;
-}
-
-/* Main content padding */
-main {
-    padding-top: 35px;
-}
-
-/* Navigation/Menu styles */
-nav li {
-    display: inline-block;
-}
-
-nav li a {
-    color: #EDF1D6; 
-    display: block;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-nav li a:hover {
-    color: #9DC08B;
+#logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+header {
+    background-image: url('images/background.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
     text-align: center;
 }
 
-/* Paragraph style */
-p {
-    color: #40513B;
-    font-family: 'Kalam', cursive;
-    text-align: center;
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
 }
 
-/* Table styles */
-table {
+.image-section {
+    position: relative;
+    width: 45%;
+}
+
+.image-section img {
+    width: 100%;
+    transform: skewY(-10deg);
+    transition: transform 0.3s;
+}
+
+.image-section img:hover {
+    transform: scale(1.1) skewY(-10deg);
+}
+
+.image-section p {
+    position: absolute;
+    top: 50%;
+    left: 10%;
     width: 80%;
-    border-collapse: collapse;
-}
-
-table, th {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-th {
-    background-color: rgb(96, 153, 102);
-}
-
-th, td {
-    border: 2px solid black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    transform: translateY(-50%);
     padding: 10px;
-    text-align: center;
+    border-radius: 5px;
 }
 
-/* Unordered list style */
-ul {
-    font-family: 'Kalam', cursive;
-    font-size: 15px;
-    list-style-type: none;
+footer {
+    background-color: rgba(0, 128, 0, 0.8);
+    padding: 10px 50px;
     text-align: center;
+    color: white;
 }
 
-/* External notes */
-/* Added font family 'Kalam' from Google fonts */
-/* Color palette inspiration from etsy */
+@media only screen and (max-width: 768px) { /* Tablet */
+    nav {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    header {
+        height: 900px;
+    }
+
+    .overlay {
+        flex-direction: column;
+    }
+
+    .column {
+        padding: 20px 0;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section {
+        width: 80%;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) { /* Mobile */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+    header {
+        height: 1000px;
+    }
+
+    .images .image-section p {
+        top: 10%;
+        transform: translateY(0);
+        text-align: left;
+    }
+}
