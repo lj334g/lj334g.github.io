@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Masters of Maternity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="Images/smalllogo.png" alt="Masters of Maternity Logo">
+        </div>
+        <div class="auth-buttons">
+            <button class="button" onclick="location.href='login.html'">Login</button>
+            <button class="button" onclick="location.href='join.html'">Join Now</button>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="who-we-are.html" class="active">Who We Are</a>
+        <a href="resources.html">Resources</a>
+        <a href="chat.html">Chat</a>
+        <a href="search.html">Directory</a>
+    </nav>
+    <div class="container">
+        <div class="contacts">
+            <div class="contact active" onclick="selectContact(this)">Susan</div>
+            <div class="contact" onclick="selectContact(this)">John</div>
+            <div class="contact" onclick="selectContact(this)">Amelia</div>
+        </div>
+        <div class="chat">
+            <div class="chat-header">Chat with a Specialist</div>
+            <div class="messages-area">
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message here...">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function selectContact(element) {
+            document.querySelectorAll('.contact').forEach(function(contact) {
+                contact.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

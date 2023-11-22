@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Masters of Maternity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Images/smalllogo.png" alt="Masters of Maternity Logo">
+        </div>
+        <div class="auth-buttons">
+            <button class="button" onclick="location.href='login.html'">Login</button>
+            <button class="button" onclick="location.href='join.html'">Join Now</button>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="who-we-are.html">Who We Are</a>
+        <a href="resources.html">Resources</a>
+        <a href="chat.html">Chat</a>
+        <a href="search.html">Directory</a>
+    </div> 
+    <main class="directory-container">
+        <h1>Doulas</h1>
+        <p class="directory-description">Search the directory by using the filters provided or <a href="#">access the map</a> to find a maternal specialist near you.</p>
+        
+        <div class="directory-content">
+            <section class="listings">
+                <article class="listing">
+                    <img src="Images/goldenlotus.png" alt="Golden Lotus Doula Services Logo" class="listing-logo">
+                    <div class="listing-details">
+                        <h2>Golden Lotus Doula Services</h2>
+                        <p class="listing-website">GoldenDoulas.com (Jess, Lily, Michaela, Lisa, Gab, Lauren, Ocean)</p>
+                        <p class="listing-description">The doula of your dreams. We are allies in your birth and postpartum experience and will only refer you to providers that will treat you with the highest caliber of respect during this chapter...</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="search-filters">
+                <div class="filter-group">
+                    <h3>Search</h3>
+                    <div class="filter-option">
+                        <label for="new-clients-yes">Accepting New Clients</label>
+                        <input type="radio" id="new-clients-yes" name="client-status" value="yes"> Yes (103)
+                        <input type="radio" id="new-clients-no" name="client-status" value="no"> No (6)
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
