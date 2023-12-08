@@ -3,54 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search - Masters of Maternity</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Directory</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="header">
-        <div class="logo">
-            <img src="Images/smalllogo.png" alt="Masters of Maternity Logo">
-        </div>
-        <div class="auth-buttons">
-            <button class="button" onclick="location.href='login.html'">Login</button>
-            <button class="button" onclick="location.href='join.html'">Join Now</button>
-        </div>
-    </div>
-    <div class="nav-bar">
-        <a href="index.html">Home</a>
-        <a href="who-we-are.html">Who We Are</a>
-        <a href="resources.html">Resources</a>
-        <a href="chat.html">Chat</a>
-        <a href="search.html">Directory</a>
-    </div> 
-    <main class="directory-container">
-        <h1>Doulas</h1>
-        <p class="directory-description">Search the directory by using the filters provided or <a href="#">access the map</a> to find a maternal specialist near you.</p>
-        
-        <div class="directory-content">
-            <section class="listings">
-                <article class="listing">
-                    <img src="Images/goldenlotus.png" alt="Golden Lotus Doula Services Logo" class="listing-logo">
-                    <div class="listing-details">
-                        <h2>Golden Lotus Doula Services</h2>
-                        <p class="listing-website">GoldenDoulas.com (Jess, Lily, Michaela, Lisa, Gab, Lauren, Ocean)</p>
-                        <p class="listing-description">The doula of your dreams. We are allies in your birth and postpartum experience and will only refer you to providers that will treat you with the highest caliber of respect during this chapter...</p>
-                        <a href="#" class="learn-more">Learn More</a>
-                    </div>
-                </article>
-            </section>
 
-            <aside class="search-filters">
-                <div class="filter-group">
-                    <h3>Search</h3>
-                    <div class="filter-option">
-                        <label for="new-clients-yes">Accepting New Clients</label>
-                        <input type="radio" id="new-clients-yes" name="client-status" value="yes"> Yes (103)
-                        <input type="radio" id="new-clients-no" name="client-status" value="no"> No (6)
+<body>
+    <!-- Navbar (Bootstrap Component) -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="Images/smalllogo.png" alt="Logo" height="115">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="who-we-are.html">Who We Are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chat.html">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"><strong>Login</strong></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><strong>Join Us</strong></a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="join-mom.html">For Moms</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="join-specialist.html">For Specialists</a>
                     </div>
-                </div>
-            </aside>
+                  </li>
+            </ul>
         </div>
-    </main>
+    </nav>
+
+    <article class="listing">
+        <h1 class="main-title">Directory</h1>
+        
+        <h1>Doulas</h1>
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/goldenlotus.png" alt="Golden Lotus Doula Services Logo" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Golden Lotus Doula Services</h2>
+                    <p class="card-text">GoldenDoulas.com (Jess, Lily, Michaela, Lisa, Gab, Lauren, Ocean)</p>
+                    <p class="card-text">The doula of your dreams. We are allies in your birth and postpartum experience and will only refer you to providers that will treat you with the highest caliber of respect during this chapter. We support families of all kinds, LGBTQ, single parents, adopted families, fostering families, fertility journey families and more! If Doulaing is an art- we are the Louvre. We are the ones you have been looking for.</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/golden-lotus-doula-services/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/Edoukou.png" alt="Edoukou" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Edoukou</h2>
+                    <p class="card-text">I have always been passionate about making sure people feel supported and cared for in various capacities. My job as your doula is to provide holistic and comprehensive doula care that acknowledges the physical, mental, social, and spiritual factors that can impact birth and postpartum experiences. I practice from a person centered perspective where your needs, values, agency, and desires are at the forefront.</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/edoukou-aka-ezoua/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/badger.png" alt="Badger and Quill" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Badger & Quill Photography – Photography, Birth & Doula Services</h2>
+                    <p class="card-text">I'm Megan - I'm a bit of a hot mess. I’m awkward, but hilarious, and I swear too much. I love the outdoors, trying my hand at homesteading, devouring books, doing photography, crafting, and raising animals. You can often find me with my nose buried in the ruff on one of my dogs, breathing in their dusty, sun drenched smell and trying to cement it in my memory. I maaaaay do that with my kiddo too, although he usually smells like outdoors, ketchup, and curiosity.</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/megan-angstadt-williams/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <h1>Lactation Consultants</h1>
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/casey.png" alt="Casey Carroll" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Casey Carroll</h2>
+                    <p class="card-text">Hello! My name is Casey Carroll and I am a Birth Doula, Postpartum Doula, and CBC. I absolutely love to support mothers in the most precious times of their lives. Empowering woman to advocate for themselves and their baby’s is my goal. I can’t wait to support you and your family!</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/casey-carroll/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/angie.png" alt="Angie" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Angie Danek</h2>
+                    <p class="card-text">Angie has been attending births in the Pittsburgh area since 2011. Through her years of having and raising her 4 children, she experienced 7 miscarriages and secondary infertility, those experiences led her to a deeper understanding of autoimmune disease and the importance of healing the body on a deeper level. After several years working toward healing her microbiome, she delivered her 4th child at home. She is a birth, bereavement, lactation, postpartum and childbirth education specialist.</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/angie-danek/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/briana.png" alt="Briana" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Badger & Quill Photography – Photography, Birth & Doula Services</h2>
+                    <p class="card-text">Dr. Briana Specializes in the evaluation and treatment of lip and tongue ties. She has completed specialized hands on training as well as myofunctional therapy training courses. The practice works with midwives, nurses, lactation consultants, and primary care professionals to provide the best of care to infants, children and adults with tongue, lip and airway concerns.</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/briana-falbo/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <h1>Mental Health Specialists</h1>
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/jul.png" alt="jul" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Jul Bibro-Ruch, LCSW, CYT, PMH-C</h2>
+                    <p class="card-text">Hello! I've been a therapist for 20+ years and specifically working with Moms, Pregnant and Birthing People for the past 6 years and am a certified perinatal mental health counselor. I love working to empower women and helping them learn to lean into support and better support themselves. I work short term and longer term with people, depending on their needs for therapeutic support. I currently only offer telehealth services & take most insurances.</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/jul-bibro-ruch/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/maizee.png" alt="maizee" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Maizee Devlin, LCSW</h2>
+                    <p class="card-text">Hi! I’m Maizee. I am a passionate professional with a dual career as a doula and a licensed clinical social worker. I am also a mother. My mission is to empower individuals and families during transformative life moments and provide support for their physical and emotional well-being. My goal is to support and empower my clients to make informed decisions. I believe in a client-centered and strengths-based approach, tailoring my services to meet the unique needs of each individual or family.</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/maizee-devlin/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <h1>Midwives</h1>
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/selena.png" alt="selena" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Selena</h2>
+                    <p class="card-text">Selena is a traditional midwife supporting low risk families who are seeking a home birth. Their passion is educating clients and their families so that they feel empowered and confident making the decisions about birth. Selena even teaches partners to “catch” the baby because they believe babies should be born into the world to meet the family that will love them not a provider.</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/selena-eisenberg/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/whitney.png" alt="whitney" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Whitney Elsesser CNM</h2>
+                    <p class="card-text">Hello! I’m A Certified Nurse Midwife located in the greater Pittsburgh area</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/whitney-elsesser/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-horizontal">
+                <img src="Images/chana.png" alt="chana" class="card-img-left">
+                <div class="card-body">
+                    <h2 class="card-title">Chana Luba Ertel</h2>
+                    <p class="card-text">I have been supporting women in childbirth since my first birth as a doula in 1998. I became a Certified Professional Midwife, CPM, in 2016 after years of schooling and apprenticeship. I am also a RN, herbalist, doula trainer, childbirth educator and mother of five. I have had the privilege of assisting many different women, families and communities during during their journey to motherhood.</p>
+                    <a href="https://mastersofmaternity.com/maternal-specialist/chana-ertel/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <footer class="site-footer">
+        <p>©Masters of Maternity</p>
+    </footer>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="accordion.js"></script>
+    <script src="navbar-toggle.js"></script>
 </body>
 </html>
